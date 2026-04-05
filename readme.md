@@ -12,6 +12,7 @@ This system implements a multi-agent orchestration pattern to provide high-fidel
 This analysis uses two fundamentally different market philosophies to ensure diverse outputs:
 * **Momentum Trader:** Focuses on price inertia and trend following. This strategy prioritizes technical indicators like the 20-day and 50-day Moving Averages ($MA_{20}$, $MA_{50}$) to identify "winning" trends.
 * **Value Contrarian:** Focuses on mean reversion and overextension. This strategy prioritizes the Relative Strength Index (RSI) and distance from 52-week highs to identify "overbought" or "oversold" conditions.
+  
 Their findings are then synthesized by a **Chief Evaluator Agent** to identify consensus or conflict.
 
 This project was developed for the CMU Heinz College AIM program to demonstrate **Adversarial AI Reasoning** and **Walk-Forward Validation** in financial decision-support systems.

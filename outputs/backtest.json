@@ -1,0 +1,78 @@
+[
+    {
+        "ticker": "NVDA",
+        "decision_date": "2026-02-02",
+        "signals_at_time": {
+            "current_price": 185.6,
+            "ma20": 186.55,
+            "ma50": 183.89,
+            "rsi": 50.83,
+            "dist_from_52w_high": 12.52,
+            "volume_change": 0
+        },
+        "momentum_move": "SELL",
+        "value_move": "HOLD",
+        "price_then": 185.6,
+        "price_now": 177.39,
+        "outcome_60d": "-4.42%",
+        "momentum_score": "\u2705 AVOIDED LOSS",
+        "value_score": "\u274c MISSED/WRONG"
+    },
+    {
+        "ticker": "TSLA",
+        "decision_date": "2026-02-02",
+        "signals_at_time": {
+            "current_price": 421.81,
+            "ma20": 436.19,
+            "ma50": 443.99,
+            "rsi": 38.32,
+            "dist_from_52w_high": 15.44,
+            "volume_change": 0
+        },
+        "momentum_move": "SELL",
+        "value_move": "BUY",
+        "price_then": 421.81,
+        "price_now": 360.59,
+        "outcome_60d": "-14.51%",
+        "momentum_score": "\u2705 AVOIDED LOSS",
+        "value_score": "\u274c MISSED/WRONG"
+    },
+    {
+        "ticker": "JNJ",
+        "decision_date": "2026-02-02",
+        "signals_at_time": {
+            "current_price": 229.53,
+            "ma20": 215.89,
+            "ma50": 209.45,
+            "rsi": 91.91,
+            "dist_from_52w_high": 0.19,
+            "volume_change": 0
+        },
+        "momentum_move": "HOLD",
+        "value_move": "SELL",
+        "price_then": 229.53,
+        "price_now": 243.04,
+        "outcome_60d": "5.89%",
+        "momentum_score": "\u274c MISSED/WRONG",
+        "value_score": "\u274c MISSED/WRONG"
+    },
+    {
+        "ticker": "GME",
+        "decision_date": "2026-02-02",
+        "signals_at_time": {
+            "current_price": 25.85,
+            "ma20": 22.21,
+            "ma50": 21.93,
+            "rsi": 78.68,
+            "dist_from_52w_high": 60.13,
+            "volume_change": 0
+        },
+        "momentum_move": "HOLD",
+        "value_move": "SELL",
+        "price_then": 25.85,
+        "price_now": 23.36,
+        "outcome_60d": "-9.63%",
+        "momentum_score": "\u274c MISSED/WRONG",
+        "value_score": "\u2705 AVOIDED LOSS"
+    }
+]

@@ -9,13 +9,13 @@
         "JNJ",
         "NVDA"
     ],
-    "total_agreements": 1,
-    "total_disagreements": 3,
+    "total_agreements": 2,
+    "total_disagreements": 2,
     "results": [
         {
             "ticker": "GME",
             "a_decision": "SELL",
-            "b_decision": "HOLD",
+            "b_decision": "BUY",
             "agree": false
         },
         {
@@ -32,9 +32,9 @@
         },
         {
             "ticker": "NVDA",
-            "a_decision": "SELL",
-            "b_decision": "BUY",
-            "agree": false
+            "a_decision": "HOLD",
+            "b_decision": "HOLD",
+            "agree": true
         }
     ]
 }

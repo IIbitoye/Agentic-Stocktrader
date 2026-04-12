@@ -6,11 +6,16 @@
 ---
 
 ## 📌 Project Overview
-This system utilizes a **Multi-Agent Orchestration** pattern to perform technical stock analysis. Unlike a single-prompt analysis, this project employs two specialized agents—a **Momentum Trader** and a **Value Contrarian**—who analyze market data independently. Their findings are then synthesized by a **Chief Evaluator Agent** to identify consensus or conflict.
+This system implements a multi-agent orchestration pattern to provide high-fidelity stock analysis. It uses adversarial reasoning to compare different financial philosophies and synthesizes them into a single investment perspective.
+
+### 1. Selected Strategies
+This analysis uses two fundamentally different market philosophies to ensure diverse outputs:
+* **Momentum Trader:** Focuses on price inertia and trend following. This strategy prioritizes technical indicators like the 20-day and 50-day Moving Averages ($MA_{20}$, $MA_{50}$) to identify "winning" trends.
+* **Value Contrarian:** Focuses on mean reversion and overextension. This strategy prioritizes the Relative Strength Index (RSI) and distance from 52-week highs to identify "overbought" or "oversold" conditions.
+  
+Their findings are then synthesized by a **Chief Evaluator Agent** to identify consensus or conflict.
 
 This project was developed for the CMU Heinz College AIM program to demonstrate **Adversarial AI Reasoning** and **Walk-Forward Validation** in financial decision-support systems.
-
----
 
 ## 🚀 Key Features
 * **Parallel Agent Analysis:** Two distinct trading philosophies (Momentum vs. Value) analyze the same data state without cross-contamination.
@@ -20,14 +25,48 @@ This project was developed for the CMU Heinz College AIM program to demonstrate 
 
 ---
 
-## 🛠️ Tech Stack
+### 2. LLM Provider
+* **Model:** Llama-3.3-70b-versatile
+* **Provider:** **Groq Cloud** (Chosen for high-speed inference and native support for JSON-mode structure).
+
+### 3. 🛠️ Tech Stack
 * **Language:** Python 3.13
-* **Intelligence:** Llama-3.3-70b (via Groq Cloud)
+* **Intelligence:** Llama-3.3-70b (via Groq Cloud) 
 * **Financial Data:** Yahoo Finance API (`yfinance`)
 * **Environment:** Virtualized Python Environment (`.venv`)
+* **Orchestration:**  Custom Python implementation using the Groq SDK for parallel agent calls and sequential evaluation/debate logic. 
 
 ---
+## ⚙️ Installation & How to Run
 
+### Installation
+1.  **Extract the project** or clone the repository.
+2.  **Create a virtual environment:**
+    ```bash
+    python3 -m venv .venv
+    ```
+3.  **Activate the environment:**
+    ```bash
+    source .venv/bin/activate
+    ```
+4.  **Install dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+### Running the System
+1.  **Configure API Key:** Add your Groq API key to a `.env` file: `GROQ_API_KEY=your_key_here`.
+2.  **Run Live Analysis:**
+    ```bash
+    python src/main.py
+    ```
+    *This will process NVDA, TSLA, JNJ, and GME, run the Evaluator, and initiate Debate Mode if disagreements occur.*
+3.  **Run Historical Backtest:**
+    ```bash
+    python src/backtest.py
+    ```
+---
+    
 ## 📂 File Structure
 ```text
 stocktrader_iibitoye/
